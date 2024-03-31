@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="sectionHome" class="homebg">
+        <div class="sectionHome">
+            <div class="portfolio-container">
+                <img src="myprofile.jpg" class="photo" alt="myImage" />
+                <h1 class="h1">MY PORTFOLIO</h1>
+                <p class="p"> Click here to know more about me</p>
+                <button class="buttonclick" onclick="display('sectionPart')">Click</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionPart">
+        <header class="header"> Do you Want to Know about me?</header>
+        <div class="sectionPart">
+            <div class="card familyCard">
+                <img src="https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600" class="partimage" />
+                <h1 class="colors">Family</h1>
+                <button onclick="display('sectionFamily')">Family</button>
+            </div>
+            <div class=" card EdcationCard">
+                <img src="https://media.istockphoto.com/id/896458598/photo/multi-ethnic-teenage-graduates-throw-caps-in-air.jpg?s=2048x2048&w=is&k=20&c=JwoTbGY3K7ARYqxgZF7eJ8lw87kL0LXowIiLLFiDyb8=" class="partimage" />
+                <h1 class="colors">Education
+                </h1>
+                <button onclick="display('sectionEdcation')"> Education</button>
+            </div>
+            <div class=" card HometownCard">
+                <img src="https://images.pexels.com/photos/2271900/pexels-photo-2271900.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="partimage" />
+                <h1 class="colors">HomeTown</h1>
+                <button onclick="display('sectionHomeTown')">HomeTown</button>
+            </div>
+            <div class=" card TechnicalSkillCard">
+                <img src="https://images.pexels.com/photos/6325888/pexels-photo-6325888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="partimage" />
+                <h1 class="colors">TechnicalSkills</h1>
+                <button onclick="display('sectionTechnicalSkill')">TechnicalSkills</button>
+            </div>
+            <div class=" card SoftSkillCard">
+                <img src="https://cdn2.hubspot.net/hubfs/1430252/soft-skills-feature.jpg" class="partimage" />
+                <h1 class="colors">Softskills</h1>
+                <button onclick="display('sectionSoftskill')">Softskills</button>
+            </div>
+            <div class=" card CertificationCard">
+                <img src="https://images.pexels.com/photos/6651190/pexels-photo-6651190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="partimage" />
+                <h1 class="colors">Certifications</h1>
+                <button onclick="display('sectionCertification')">Certifications</button>
+            </div>
+            <div class=" card Hobbies">
+                <img src="https://d502jbuhuh9wk.cloudfront.net/articles/63cbb26ce4b0d3f218b9fcff/3pF10hobbymoneyremovebgpreview.png" class="partimage" />
+                <h1 class=" colors">Hobbies</h1>
+                <button onclick="display('sectionHobbies')">Hobbies</button>
+            </div>
+            <div class=" card ProjectCard">
+                <img src="https://thumbs.dreamstime.com/b/projects-lead-us-to-success-our-personal-professional-life-necessary-reach-our-goals-everyday-92274762.jpg" class="partimage" />
+                <h1 class="colors">Projects</h1>
+                <button onclick="display('sectionProject')">Projects</button>
+            </div>
+            <div class=" card ContactCard">
+                <img src="https://images.pexels.com/photos/1416530/pexels-photo-1416530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="partimage" />
+                <h1 class="colors">Contact</h1>
+                <button onclick="display('sectionContact')">Contact</button>
+            </div>
+        </div>
+        <div class="back-con">
+            <button class="back" onclick="display('sectionHome')"> Back </button>
+        </div>
+
+    </div>
+    <div id="sectionFamily">
+        <h1 class="h2"> MY Family </h1>
+        <p class="p2"> We are the closknit family of 5 members </p>
+        <div class="family">
+            <div class="member">
+                <img src="dad.jpg" alt="father" />
+                <h1>Father</h1>
+                <p>SK AnwarBasha</p>
+                <p><b> Occupation:</b> Contractor</p>
+            </div>
+            <div class="member">
+                <img src="mom.jpg" alt="mother" />
+                <h1>Mother</h1>
+                <p>SK Malan</p>
+                <p><b> Occupation:</b> Home maker</p>
+            </div>
+            <div class="member">
+                <img src="sis.jpg" alt="sister" />
+                <h1>Sister</h1>
+                <p>SK Fareeda</p>
+                <p><b> Education:</b> MBBS Intern</p>
+            </div>
+            <div class="member">
+                <img src="aseena.jpg" alt="Me" />
+                <h1>Me</h1>
+                <p>SK Aseena</p>
+                <p><b> Education:</b>B-Tech ECE</p>
+            </div>
+            <div class="member">
+                <img src="bro.jpg" alt="Brother" />
+                <h1>Brother</h1>
+                <p>SK Shashavali</p>
+                <p><b> Education:</b> BTech EEE(E2)</p>
+            </div>
+        </div>
+        <div class="familycon">
+            <img src="family.jpg" class="familyimage" />
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+
+    </div>
+    <div id="sectionEdcation">
+        <h1 class="h2"> MY Education</h1>
+        <div class="family">
+            <div class="member">
+                <img src="data:image/png;base64,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" alt="Me" />
+                <h1>Full Stack Devolopement</h1>
+                <p>Industry Ready Certification</p>
+                <p><b> Institute:</b> Nxtwave Disruptive Technologies</p>
+                <p><b>CourseExamScore:</b> 9.8</p>
+            </div>
+            <div class="member">
+                <img src="data:image/jpeg;base64,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" alt="father" />
+                <h1>Bachelors of Technology</h1>
+                <p>Electronics and Communication Engineering</p>
+                <p><b> University:</b> IIIT Basar</p>
+                <p><b>CGPA:</b> 8.2</p>
+            </div>
+            <div class="member">
+                <img src="data:image/jpeg;base64,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" alt="mother" />
+                <h1>Pre University Course</h1>
+                <p>MPC</p>
+                <p><b> University:</b> IIIT Basar</p>
+                <p><b>CGPA:</b> 9.2</p>
+            </div>
+            <div class="member">
+                <img src="https://play-lh.googleusercontent.com/d-ecUqBBHfOmGR5M7-Oq74WKktVb_aVPGA2uW11vtVaGEXjwOCqh3Y557n6EBbPE_5A" />
+                <h1>School</h1>
+                <p>SSC</p>
+                <p><b> University:</b> Vishwa Bharathi Techno School</p>
+                <p><b>CGPA:</b> 10</p>
+            </div>
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionHomeTown">
+        <div class="town">
+            <h1>Beauty of Gadwal</h1>
+            <p>Let me take you through my hometown. It is one of the most peaceful places for me.</p>
+        </div>
+        <div class="place">
+            <h1>Sangala Park</h1>
+            <p>Sangala Park is a beautiful recreational area in Gadwal, offering lush greenery and serene surroundings.</p>
+            <div class="images">
+                <img src="https://pbs.twimg.com/media/E-52CQtVQAEV0Xv.jpg" alt="Sangala Park">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMBKUyoTamPUQ2OMuiVurjsyc9B4xNlKTKGwBWT=w408-h306-k-no" alt="Sangala Park">
+            </div>
+        </div>
+        <div class="place">
+            <h1>Gadwal Kota</h1>
+            <p>Gadwal Kota is a historical fort in Gadwal, known for its architectural beauty and cultural significance.</p>
+            <div class="images">
+                <img src="https://upload.wikimedia.org/wikipedia/te/thumb/c/cf/Gadwal_Fort.JPG/800px-Gadwal_Fort.JPG" alt="Gadwal Kota">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/06/af/f6/31/kondareddy-burz-fort.jpg?w=400&h=300&s=1" alt="Gadwal Kota">
+                <img src="https://res.cloudinary.com/chasset/image/upload/c_scale,dpr_auto,e_improve,f_webp,w_auto/v1/hbimages/mobile/location/1684313018354-Medak-Fort-Telangana.jpg" alt="Gadwal Kota">
+            </div>
+        </div>
+        <div class="place">
+            <h1>Jurala Dam</h1>
+            <p>Jurala Dam is a picturesque dam located near Gadwal, offering stunning views and water-based recreational activities.</p>
+            <div class="images">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlW-WhdAI32ApD4P9CuJtJYbAxnz6TzpjKNQ&usqp=CAU" alt="Jurala Dam">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVjtZFbi2yrV0_svtVSD_hygUfNE9hFZQOFOQGoHHD9SpRlhZFSl1haMZ7YB1a-9vP2GE&usqp=CAU" alt="jurala Dam" />
+            </div>
+        </div>
+        <div class="place">
+            <h1>Gadwal Sarees</h1>
+            <p>Gadwal Sarees are traditional handwoven sarees from Gadwal, renowned for their intricate designs and superior quality.</p>
+            <img src="https://tsht.telangana.gov.in/GolkoCrafts/images/blog/may-05-gadwal.jpg" alt="Gadwal Sarees">
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionCertification">
+        <h1 class="cert-head"> Certificates</h1>
+        <div class="cert-container">
+            <div class="certificate">
+                <img src="static.png" alt="Certificate 1">
+                <div class="certificate-content">
+                    <h2>Build Your Own Static Website</h2>
+                    <p>This certificate proves your ability to build a static website using CSS.</p>
+                    <a href="https://certificates.ccbp.in/intensive/static-website?id=DZLAIEGDSW">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="responsive.png" alt="Certificate 2">
+                <div class="certificate-content">
+                    <h2>Build Your Own Responsive website</h2>
+                    <p>This cerificate proves your ability to build a responsive website sing bootstrap,flexbox and css.</p>
+                    <a href="https://certificates.ccbp.in/intensive/responsive-website?id=MHSEYHJENG">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="css.png" alt="Certificate 3">
+                <div class="certificate-content">
+                    <h2>CSS</h2>
+                    <p>This certificate proves your ability in CSS Basic provided by HackerRank.</p>
+                    <a href="https://www.hackerrank.com/certificates/2d21a0ee5fcf">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="db.png" alt="Certificate 4">
+                <div class="certificate-content">
+                    <h2>Introduction to databases</h2>
+                    <p>This certificate proves your ability in SQLite</p>
+                    <a href="https://certificates.ccbp.in/intensive/introduction-to-databases?id=MMBQUZQBIA">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="certificate2.jpg" alt="Certificate 5">
+                <div class="certificate-content">
+                    <h2>SQL</h2>
+                    <p>This certificate proves your ability in SQL and provided by HackerRank</p>
+                    <a href="https://www.hackerrank.com/certificates/05f00a96594d">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="skillnationai.jpg" alt="Certificate 6">
+                <div class="certificate-content">
+                    <h2>AI tools Worshop</h2>
+                    <p>This certificate provided by skill nation and learnt many AI tools from workshop.</p>
+                    <a href="#"> no Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="python.png" alt="Certificate 7">
+                <div class="certificate-content">
+                    <h2>Python Foundations</h2>
+                    <p>This certificate proves your ability in solving Python Programs.</p>
+                    <a href="https://certificates.ccbp.in/intensive/programming-foundations?id=KWWKWOLAWI">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="ps.png" alt="Certificate 8">
+                <div class="certificate-content">
+                    <h2>Problem Solving(Python)</h2>
+                    <p>his certificate proves your ability in problem solving and provided by HackerRank</p>
+                    <a href="https://www.hackerrank.com/certificates/e13920cfe822">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="df.jpg" alt="Certificate 9">
+                <div class="certificate-content">
+                    <h2>Developer Foundations</h2>
+                    <p>This certificate proves your ability in Git and commandline</p>
+                    <a href="https://certificates.ccbp.in/intensive/developer-foundations?id=CYCYFXYZTN">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="dynamic.png" alt="Certificate 10">
+                <div class="certificate-content">
+                    <h2>Build Your Own Dynamic Website</h2>
+                    <p>This certificate proves your ability to build a Dynamic website using Html,css and js.</p>
+                    <a href="https://certificates.ccbp.in/intensive/dynamic-web-application?id=GAZRAJHMTQ">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="js.jpg" alt="Certificate 11">
+                <div class="certificate-content">
+                    <h2>Javascript Essentials</h2>
+                    <p>This certificate proves your ability in Javascript Foundations.</p>
+                    <a href="https://certificates.ccbp.in/intensive/javascript-essentials?id=AJDXEVSYIG">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="jshacker.png" alt="Certificate 12">
+                <div class="certificate-content">
+                    <h2>Javascript</h2>
+                    <p>This certificate proves your ability to solve problems using JS</p>
+                    <a href="https://www.hackerrank.com/certificates/3f2d198a4c43">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="flexbox.jpg" alt="Certificate 13">
+                <div class="certificate-content">
+                    <h2>Responsive websites Using Flexbox</h2>
+                    <p>This certificate proves your ability to build a responsive websites using flexbox</p>
+                    <a href="https://certificates.ccbp.in/intensive/flexbox?id=MEWWATMCIR">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="reactjs.jpg" alt="Certificate 14">
+                <div class="certificate-content">
+                    <h2>React js</h2>
+                    <p>This certificate proves your ability to build the websites using react js</p>
+                    <a href="https://certificates.ccbp.in/intensive/react-js?id=HDCHBXWEUI">Certificate Link</a>
+                </div>
+            </div>
+            <div class="certificate">
+                <img src="nodejs..jpg" alt="Certificate 15">
+                <div class="certificate-content">
+                    <h2>Node js</h2>
+                    <p>This certificate proves your ability to build api using node js</p>
+                    <a href="https://certificates.ccbp.in/intensive/node-js?id=UGRPQHCDGX">Certificate Link</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionTechnicalSkill">
+        <h1 class="tech-head"> Technical Skills</h1>
+        <div class="tech-container">
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>HTML</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>HTML (HyperText Markup Language) is the standard markup language for creating web pages and web applications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>BootStrap</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>r Bootstrap is a free, open source front-end development framework for the creation of websites and web apps. Designed to enable responsive development of mobile-first websites, Bootstrap provides a collection of syntax for template designs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>CSS</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>CSS (Cascading Style Sheets) is a style sheet language used for describing the presentation of a document written in HTML.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>JavaScript</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and much more.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>Python</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>Python is an interpreted, high-level, general-purpose programming language known for its readability and simplicity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>SQL</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS).</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tech-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <h2>React.js</h2>
+                    </div>
+                    <div class="card-back">
+                        <p>React.js is an open-source JavaScript library for building user interfaces or UI components, maintained by Facebook and a community of individual developers and companies.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+
+    </div>
+    <div id="sectionSoftskill">
+        <div class="soft-container">
+            <h1 class="tech-head">Soft Skills</h1>
+            <div class="skill workoholic">
+                <h2>Workoholic</h2>
+                <p>Passionate and dedicated towards work, always willing to put in extra effort to achieve goals.</p>
+            </div>
+            <div class="skill timebound">
+                <h2>Timebound</h2>
+                <p>Efficiently manage time and prioritize tasks to meet deadlines effectively.</p>
+            </div>
+            <div class="skill selfmotivated">
+                <h2>Self-Motivated</h2>
+                <p>Driven by internal factors, able to stay focused and maintain enthusiasm without external influence.</p>
+            </div>
+            <div class="skill punctual">
+                <h2>Punctual</h2>
+                <p>Consistently arrive on time for appointments, meetings, and tasks, respecting others' time.</p>
+            </div>
+            <div class="skill teamdynamics">
+                <h2>Team Dynamics</h2>
+                <p>Collaborative and supportive team member, adept at building relationships and fostering teamwork.</p>
+            </div>
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionHobbies">
+        <h1 class="cert-head">Hobbies</h1>
+        <div id="hobbies-container">
+            <div class="hobby-section">
+                <h2 class="hobby-title">Baking</h2>
+                <p class="hobby-description">Baking delicious treats is my passion. From cookies to cakes, I love experimenting with recipes.</p>
+                <div class="hobby-gallery">
+                    <img class="hobby-image" src="cupcake.jpg" alt="Baking Image 1">
+                    <img class="hobby-image" src="bananacake.jpg" alt="Baking Image 2">
+                    <img class="hobby-image" src="cake.jpg" alt="Baking Image 3">
+                    <img class="hobby-image" src="ccake.jpg" alt="Baking Image 3">
+                </div>
+            </div>
+            <div class="hobby-section">
+                <h2 class="hobby-title">Workout</h2>
+                <p class="hobby-description">Staying fit and healthy is important to me. I enjoy various forms of exercise, including walking and cardio and strengthTraining.</p>
+                <div class="hobby-gallery">
+                    <img class="hobby-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZAhXL2CKyHAoJH92-HeDJoplhsPX2Ac1X9-jyjaL9JxpIqofyD4Tk3qkWQKWt4Cb0S4U&usqp=CAU" alt="Workout Image 1">
+                </div>
+            </div>
+            <div class="hobby-section">
+                <h2 class="hobby-title">Cooking</h2>
+                <p class="hobby-description">Cooking is a creative outlet for me. I love trying out new recipes and experimenting with different cuisines.</p>
+                <div class="hobby-gallery">
+                    <img class="hobby-image" src="fruitsalad.jpg" alt="Cooking Image 1">
+                    <img class="hobby-image" src="momos.jpg" alt="Cooking Image 2">
+                    <img class="hobby-image" src="laddu.jpg" alt="Cooking Image 3">
+                    <img class="hobby-image" src="samosa.jpg" alt="Cooking Image 1">
+                    <img class="hobby-image" src="strawberryjam.jpg" alt="Cooking Image 1">
+                    <img class="hobby-image" src="kesari.jpg" alt="Cooking Image 1">
+                    <img class="hobby-image" src="butterchicken.jpg" alt="Cooking Image 1">
+                </div>
+            </div>
+            <div class="hobby-section">
+                <h2 class="hobby-title">Listening to Music</h2>
+                <p class="hobby-description">Music soothes my soul. Whether it's melody, mass, I enjoy listening to a wide variety of genres.</p>
+            </div>
+            <div class="hobby-section">
+                <h2 class="hobby-title">Photography</h2>
+                <p class="hobby-description">Capturing moments through the lens is one of my favorite hobbies. It creates the beautiful memories for us and others as well.</p>
+            </div>
+            <div class="hobby-section">
+                <h2 class="hobby-title">Solving Aptitude</h2>
+                <p class="hobby-description">I enjoy challenging my mind with aptitude puzzles and problems. It helps me stay sharp and improve my problem-solving skills.</p>
+            </div>
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')">Back</button>
+        </div>
+    </div>
+    <div id="sectionProject">
+        <h1 class="cert-head"> Projects</h1>
+        <div class="project-container">
+            <div class="project">
+                <h2>Portfolio</h2>
+                <p>Description of Project 1 goes here. This is a brief overview of what the project is about.</p>
+                <div class="project-link">
+                    <a href="https://aseenaportfolio.ccbp.tech/">Project 1 Link</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Simple Todo</h2>
+                <p>Description of Project 2 goes here. This is a brief overview of what the project is about.</p>
+                <div class="project-link">
+                    <a href="https://aseenatodoapp.ccbp.tech/">Project 2 Link</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Fake store</h2>
+                <p>Description of Project 2 goes here. This is a brief overview of what the project is about.</p>
+                <div class="project-link">
+                    <a href="https://fakestoregrid.netlify.app">Project 3 Link</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Todo with Twist</h2>
+                <p>Description of Project 2 goes here. This is a brief overview of what the project is about.</p>
+                <div class="project-link">
+                    <a href="https://todotwist.netlify.app/">Project 4 Link</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Jobby app</h2>
+                <p>Description of Project 2 goes here. This is a brief overview of what the project is about.</p>
+                <div class="project-link">
+                    <a href="https://aseenajobbyapp.ccbp.tech/">Project 5 Link</a>
+                </div>
+            </div>
+            <div class="project">
+                <h2>Food Munch</h2>
+                <p>Description of Project 2 goes here. This is a brief overview of what the project is about.</p>
+                <div class="project-link">
+                    <a href="https://aseenafoodmunch.ccbp.tech/">Project 6 Link</a>
+                </div>
+            </div>
+
+            <div class="github-link">
+                <p>To view more projects and code of the projects , please visit our <a href="https://github.com/AseenaSK/">GitHub</a> account.</p>
+            </div>
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionContact">
+        <div class="contactinfo">
+            <h1> Feel Free to contact </h1>
+            <a href="+917013311240"><i class="icon fas fa-phone"></i></a>
+            <p>7013311240</p>
+            <a href="mailto:skaseena810@gmail.com"><i class="icon fas fa-envelope"></i></a>
+            <p>skaseena810@gmail.com</p>
+            <a href="https://www.linkedin.com/in/aseena-sk" target="_blank"><i class="icon fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/aseena-sk/">https://www.linkedin.com/in/aseena-sk/</a>
+            <a href="https://github.com/AseenaSK/" target="_blank"><i class="icon fab fa-github"></i></a>
+            <a href="https://github.com/AseenaSK/">https://github.com/AseenaSK/</a>
+        </div>
+        <div class="back-cont">
+            <button class="back" onclick="display('sectionPart')"> Back </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+
+
+</body>
+
+</html>
